@@ -1,4 +1,4 @@
-# pear-swoole
+# peach-swoole
 pear让你更畅快地编程。peach-swoole是以peach-api为基础，增加聊天必要服务，重整为支持聊天服务的项目。
 支持PHP、MySQL、Swoole。 
 
