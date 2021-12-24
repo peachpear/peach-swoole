@@ -9,8 +9,7 @@ return array(
     'bootstrap' => ['log'],
 	'components' => [
 		'cache' => [
-			'class' => 'common\components\LRedisCache',
-			'hashKey' => false,
+            'class' => 'yii\caching\FileCache',
 		],
         'demoDB' => [
             'class' => '\yii\db\Connection',
@@ -20,9 +19,6 @@ return array(
 		'curl'=> [
 			'class' => 'common\components\LComponentCurl',
 		],
-        'queue' => [
-            "class" =>  'common\components\LRabbitQueue'
-        ],
         'log' => [
             'flushInterval' => 1,
             'targets' => [

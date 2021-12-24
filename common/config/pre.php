@@ -14,14 +14,6 @@ $commonConfig = array(
             'username' => '',
             'password' => '',
         ],
-        'queue' => [
-            'credentials' => [
-                'host' => '',
-                'port' => '5672',
-                'login' => '',
-                'password' => ''
-            ]
-        ],
     ],
     'params' => [],
 );

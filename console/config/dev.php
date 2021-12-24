@@ -3,12 +3,6 @@ defined('YII_DEBUG') or define("YII_DEBUG", true);
 
 $initConfig = [
     "components"  =>  [
-        'errorHandler'  =>  [
-            "sendTo"   =>  ["xxx1@demo.com","xxx2@demo.com"],
-            "sendCC"    =>  [
-                "xxxx@demo.com"=>"xxxx",
-            ],
-        ],
     ],
     "params"   =>  [
         'socket' => [
@@ -25,13 +19,13 @@ $initConfig = [
             'daemonize'        => 1,
             'log_file'         => '/var/www/log/swoole/swoole_socket_test.log',
             'pid_file'         => '/var/www/log/swoole/swoole_socket_test_pid.log',
-            'log_size'         => 204800000,
-            'log_dir'          => '/var/www/log/swoole',
+//            'log_size'         => 204800000,
+//            'log_dir'          => '/var/www/log/swoole',
             'heartbeat_idle_time' => 100,
             'heartbeat_check_interval' => 60,
         ],
         'proxy' => [
-            'ip' => '192.168.0.110',
+            'ip' => '192.168.17.27',
             'port' => '9502',
         ],
         'proxy_config' => [
@@ -44,8 +38,8 @@ $initConfig = [
             'daemonize'        => 1,
             'log_file'         => '/var/www/log/swoole/swoole_proxy_test.log',
             'pid_file'         => '/var/www/log/swoole/swoole_proxy_test_pid.log',
-            'log_size'         => 204800000,
-            'log_dir'          => '/var/www/log/swoole',
+//            'log_size'         => 204800000,
+//            'log_dir'          => '/var/www/log/swoole',
             'open_eof_split'   => true,
             'package_eof'      => "\r\n\r\n",
             'package_max_length' => 1024 *1024 *2,

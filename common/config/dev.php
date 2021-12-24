@@ -14,14 +14,6 @@ $commonConfig = array(
             'username' => 'demo',
             'password' => 'demo_+-*123',
         ],
-        'queue' => [
-            'credentials' => [
-                'host' => 'test.rabbitmq.demo.com',
-                'port' => '5672',
-                'login' => 'mqadmin',
-                'password' => 'demo_+-*123'
-            ]
-        ],
     ],
     'params' => [],
 );

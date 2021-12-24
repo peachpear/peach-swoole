@@ -83,27 +83,18 @@ class LConsoleErrorHandler extends ErrorHandler
         if (YII_DEBUG) {
             throw $exception;
         } else {
-            $this->sendErrorMsg($data);
+//            $this->sendErrorMsg($data);
         }
     }
 
     /**
-     * 把错误异常信息推入mail队列，发邮件提醒项目负责人
+     * 错误异常信息
      * @param $data
      * @internal param $exception
      */
     public function sendErrorMsg($data)
     {
-        /** @var LRabbitQueue $queue */
-        $queue = Yii::$app->get("queue");
-        $params = [
-            'send_to' => $this->sendTo,
-            'cc_to' => $this->sendCC,
-            'text' => json_encode($data),
-            'title' => "[".ENV.']cli-exception-error',
-            'file' => []
-        ];
-        $queue->produce($params, 'async', 'mail');
+
     }
 
     /**
