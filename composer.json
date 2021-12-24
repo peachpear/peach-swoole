@@ -1,0 +1,36 @@
+{
+    "name": "peachpear/peach-swoole",
+    "description": "peach for swoole framework",
+    "keywords": ["peach", "peach-swoole", "swoole", "peachpear"],
+    "type": "project",
+    "license": "MPL-2.0",
+    "authors": [
+        {
+            "name": "baiyang",
+            "email": "zhuyingu@126.com"
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/yiisoft/yii2/issues?state=open",
+        "forum": "http://www.yiiframework.com/forum/",
+        "wiki": "http://www.yiiframework.com/wiki/",
+        "irc": "irc://irc.freenode.net/yii",
+        "source": "https://github.com/yiisoft/yii2"
+    },
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://packagist.phpcomposer.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.0.0",
+        "yiisoft/yii2": "~2.0.38"
+    },
+    "replace": {
+        "bower-asset/jquery": ">=1.11.0",
+        "bower-asset/inputmask": ">=3.2.0",
+        "bower-asset/punycode": ">=1.3.0",
+        "bower-asset/yii2-pjax": ">=2.0.0"
+    }
+}
